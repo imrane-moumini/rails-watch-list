@@ -25,3 +25,6 @@ List.create!(name: "French movies")
 List.create!(name: "UK movies")
 List.create!(name: "Spanish movies")
 puts "end list seed"
+
+puts "begin bookmarks seed"
+puts "end bookmarks seed"

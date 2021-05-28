@@ -1,0 +1,18 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'bookmarks.jpg' %>);">
+  <div class="container">
+    <h1>Add a bookmark</h1>
+  </div>
+
+  <div class="container">
+  <%= simple_form_for([ @list, @bookmark ])  do |f| %>
+    <%= f.input :comment %>
+    <%= f.association :movie%>
+    <%= f.association :list %>
+    <%= f.submit "Submit bookmark", class: "btn btn-success" %>
+  <% end %>
+  <br>
+  <br>
+
+ <div class="btn btn-success">
+  <%= link_to "go back to lists", root_path %>
+</div>
