@@ -1,6 +1,14 @@
-<% @list.movies.each do |movie| %>
-<h2><%= movie.title %></h2>
-<p><%= movie.overview %></p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'netflix.jpg' %>);">
+  <div class="container">
+    <h1><%= @list.name %></h1>
+  </div>
+</div>
 
-<%= link_to "go back to lists", roots_path %>
-<% end %>
+<div class="container">
+  <% @list.movies.each do |movie| %>
+  <h2><%= movie.title %></h2>
+  <p><%= movie.overview %></p>
+
+  <%= link_to "go back to lists", roots_path %>
+  <% end %>
+</div>
