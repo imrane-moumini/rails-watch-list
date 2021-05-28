@@ -1,0 +1,26 @@
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'movie_theater.jpg' %>);">
+  <div class="container">
+    <h1>Save any kind of movies</h1>
+    <p>classic</p>
+  </div>
+</div>
+
+<div class ="container">
+
+  <h2>My lists</h2>
+  <div class="cards">
+    <% @lists.each do |list| %>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+        <div>
+          <h2><%= list.name %></h2>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+
+
+
+
+
